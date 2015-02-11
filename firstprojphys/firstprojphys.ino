@@ -1,5 +1,16 @@
+/*
+The Betting Game
+Serena Posner
+DIGF 2B03 Physical Computing
+OCAD University
+Created on 020715
+Based on:
+AnalogReadSerial, public domain, http://arduino.cc/en/Tutorial/AnalogReadSerial
+Button, DojoDave, http://arduino.cc/en/Tutorial/Button
+Tone, Tom Igoe, http://arduino.cc/en/Tutorial/Tone
 //this game uses buttons and sensors to create a game that allows 
 //the user to drop a coin and bet on the outcome
+*/
 
 
 #include "pitches.h"
