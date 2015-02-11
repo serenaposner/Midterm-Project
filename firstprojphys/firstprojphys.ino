@@ -30,7 +30,7 @@ int sensorValue2 = 0;
 
 void setup() {
   Serial.begin(9600);
-  pinMode(ledPin, OUTPUT);      
+  //pinMode(ledPin, OUTPUT);      
   pinMode(buttonPin, INPUT);     
 }
 
@@ -44,7 +44,7 @@ void loop(){
   Serial.println(sensorValue2);
   delay (500);
   if (buttonState == HIGH && sensorValue1 < 100){
-    digitalWrite(ledPin, HIGH);
+    //digitalWrite(ledPin, HIGH);
   for (int thisNote = 0; thisNote < 8; thisNote++) {
     int noteDuration = 1000/noteDurations[thisNote];
     tone(8, melody[thisNote],noteDuration);
@@ -56,7 +56,7 @@ void loop(){
   }  
   }
   if (buttonState == LOW && sensorValue2 < 100){
-    digitalWrite(ledPin, HIGH);  
+    //digitalWrite(ledPin, HIGH);  
     for (int thisNote = 0; thisNote < 8; thisNote++) {
 
     int noteDuration = 1000/noteDurations[thisNote];
